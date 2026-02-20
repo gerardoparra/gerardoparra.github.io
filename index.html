@@ -4,74 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerardo Parra - Computational Neuroscientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="animated-bg"></div>
+    <canvas id="particles"></canvas>
+    
     <header>
         <div class="container">
-            <h1>Gerardo Parra</h1>
-            <p class="subtitle">Computational Neuroscientist</p>
+            <h1 class="name-title">
+                <span class="letter" data-letter="G">G</span>
+                <span class="letter" data-letter="e">e</span>
+                <span class="letter" data-letter="r">r</span>
+                <span class="letter" data-letter="a">a</span>
+                <span class="letter" data-letter="r">r</span>
+                <span class="letter" data-letter="d">d</span>
+                <span class="letter" data-letter="o">o</span>
+                <span class="space"></span>
+                <span class="letter" data-letter="P">P</span>
+                <span class="letter" data-letter="a">a</span>
+                <span class="letter" data-letter="r">r</span>
+                <span class="letter" data-letter="r">r</span>
+                <span class="letter" data-letter="a">a</span>
+            </h1>
+            <p class="subtitle">
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
+            </p>
         </div>
     </header>
 
     <main class="container">
-        <section id="bio" class="section">
-            <h2>About</h2>
+        <section id="bio" class="section fade-in">
+            <h2 class="section-title">
+                <span class="title-number">01</span>
+                <span class="title-text">About</span>
+            </h2>
             <div class="bio-content">
-                <p>
-                    I am finishing my master's degree in computational neuroscience, with experience 
+                <p class="bio-paragraph">
+                    I am finishing my master's degree in <span class="highlight">computational neuroscience</span>, with experience 
                     modeling neural networks and analyzing complex neural datasets. Before my master's, 
                     I worked as a research assistant in a translational neuroscience lab.
                 </p>
-                <p>
-                    My interests have evolved beyond the brain to encompass adaptivity and complex 
-                    systems everywhere. I am especially interested in applying principles of decision 
+                <p class="bio-paragraph">
+                    My interests have evolved beyond the brain to encompass <span class="highlight">adaptivity and complex 
+                    systems</span> everywhere. I am especially interested in applying principles of decision 
                     making and learning to human collectives, and helping characterize the dynamics 
                     leading into and out of suboptimal steady states.
                 </p>
             </div>
         </section>
 
-        <section id="publications" class="section">
-            <h2>Publications</h2>
+        <section id="publications" class="section fade-in">
+            <h2 class="section-title">
+                <span class="title-number">02</span>
+                <span class="title-text">Publications</span>
+            </h2>
             <div class="publications-list">
-                <p class="placeholder">Publications will be listed here.</p>
+                <div class="placeholder-card">
+                    <div class="placeholder-icon">📄</div>
+                    <p class="placeholder">Publications will be listed here.</p>
+                </div>
                 <!-- Add publications as they become available -->
                 <!-- Example format:
                 <div class="publication-item">
-                    <h3>Publication Title</h3>
+                    <div class="publication-header">
+                        <h3>Publication Title</h3>
+                        <span class="publication-year">2024</span>
+                    </div>
                     <p class="authors">Author 1, Author 2, <strong>G. Parra</strong>, Author 3</p>
-                    <p class="venue">Journal/Conference Name, Year</p>
-                    <a href="#" class="link">PDF</a> | <a href="#" class="link">DOI</a>
-                </div>
-                -->
-            </div>
-        </section>
-
-        <section id="portfolio" class="section">
-            <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <p class="placeholder">Projects and code repositories will be displayed here.</p>
-                <!-- Add projects as they become available -->
-                <!-- Example format:
-                <div class="project-card">
-                    <h3>Project Name</h3>
-                    <p class="project-description">Brief description of the project.</p>
-                    <div class="project-links">
-                        <a href="#" class="link">GitHub</a>
-                        <a href="#" class="link">Demo</a>
+                    <p class="venue">Journal/Conference Name</p>
+                    <div class="publication-links">
+                        <a href="#" class="link-btn">PDF</a>
+                        <a href="#" class="link-btn">DOI</a>
                     </div>
                 </div>
                 -->
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
+        <section id="portfolio" class="section fade-in">
+            <h2 class="section-title">
+                <span class="title-number">03</span>
+                <span class="title-text">Portfolio</span>
+            </h2>
+            <div class="portfolio-grid">
+                <div class="placeholder-card">
+                    <div class="placeholder-icon">💻</div>
+                    <p class="placeholder">Projects and code repositories will be displayed here.</p>
+                </div>
+                <!-- Add projects as they become available -->
+                <!-- Example format:
+                <div class="project-card">
+                    <div class="project-icon">🚀</div>
+                    <h3>Project Name</h3>
+                    <p class="project-description">Brief description of the project.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="link-btn">GitHub</a>
+                        <a href="#" class="link-btn">Demo</a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </section>
+
+        <section id="contact" class="section fade-in">
+            <h2 class="section-title">
+                <span class="title-number">04</span>
+                <span class="title-text">Contact</span>
+            </h2>
             <div class="contact-links">
-                <a href="https://github.com/gerardoparra" class="link" target="_blank">GitHub</a>
-                <a href="mailto:your.email@example.com" class="link">Email</a>
-                <a href="https://linkedin.com/in/yourprofile" class="link" target="_blank">LinkedIn</a>
+                <a href="https://github.com/gerardoparra" class="contact-card" target="_blank">
+                    <div class="contact-icon">🔗</div>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:your.email@example.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <span>Email</span>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" class="contact-card" target="_blank">
+                    <div class="contact-icon">💼</div>
+                    <span>LinkedIn</span>
+                </a>
             </div>
         </section>
     </main>
@@ -81,5 +142,7 @@
             <p>&copy; 2026 Gerardo Parra</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
